@@ -131,6 +131,12 @@
 </div>
 {%- block extra_body %}
 {% endblock extra_body -%}
+
+<div id="fullpage" style="display: none;">
+  <span class="close-btn">&times;</span>
+  <img id="fullscreen-image" src="" alt="">
+</div>
+<script src="{{ get_url(path='js/zoomable-images.js') }}"></script>
 </body>
 
 </html>
