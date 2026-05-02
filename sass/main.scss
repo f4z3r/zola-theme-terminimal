@@ -183,7 +183,7 @@ pre {
   border-bottom: 1px solid rgba(255, 255, 255, .1);
 
   @media (max-width: $phone-max-width) {
-    white-space: pre-wrap;
+    white-space: no-wrap;
     word-wrap: break-word;
   }
 
@@ -277,8 +277,9 @@ blockquote {
 table {
   table-layout: fixed;
   border-collapse: collapse;
-  width: 100%;
   margin: 40px 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 table, th, td {
