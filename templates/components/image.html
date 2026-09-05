@@ -5,6 +5,8 @@
 {%- if src %}
 {#- If the image's URL is internal to the site, prepend the site's base URL. -#}
 {% if src is not starting_with(pat="http") %}{% set_global src = base_url ~ src %}{% endif %}
+<div class="zoomable-image-container">
 <img src="{{ src | safe }}"{% if alt %} alt="{{ alt }}"{% endif %} class="{% if position %}{{ position }}{% else -%} center {%- endif %}" {%- if style %} style="{{ style | safe }}" {%- endif %} decoding="async" loading="lazy"/>
+ </div>
 {%- endif %}
 {% endcomponent terminimal.image %}
